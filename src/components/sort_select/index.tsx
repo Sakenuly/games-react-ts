@@ -9,16 +9,15 @@ import { useAppDispatch } from '../../hooks/store-hooks';
 import { selectValue } from '../../slices/select-slice';
 import { mainSelector } from '../../functions/main-selector';
 
-const uuid = uuidv4();
 
 const sortTypes = [
-	{ value: 'name', name: 'name', uuid },
-	{ value: 'released', name: 'released', uuid },
-	{ value: 'added', name: 'added', uuid },
-	{ value: 'created', name: 'created', uuid },
-	{ value: 'updated', name: 'updated', uuid },
-	{ value: 'rating', name: 'rating', uuid },
-	{ value: 'metacritic', name: 'metacritic', uuid },
+	{ value: 'name', name: 'name', uuid:uuidv4() },
+	{ value: 'released', name: 'released', uuid:uuidv4() },
+	{ value: 'added', name: 'added', uuid:uuidv4() },
+	{ value: 'created', name: 'created', uuid:uuidv4() },
+	{ value: 'updated', name: 'updated', uuid:uuidv4() },
+	{ value: 'rating', name: 'rating', uuid:uuidv4() },
+	{ value: 'metacritic', name: 'metacritic', uuid:uuidv4() },
 ];
 
 function SortSelect() {
